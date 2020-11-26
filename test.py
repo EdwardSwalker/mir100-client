@@ -1,7 +1,7 @@
 import requests
 from requests.auth import HTTPBasicAuth
-inputCommand = input('Enter your name:')
-print('Hello, ' + inputCommand)
+inputCommand = input('Please enter command:')
+print('Running' + inputCommand)
 
 if inputCommand == 'status':
     r=requests.get('http://mir.com/api/v2.0.0/status',
